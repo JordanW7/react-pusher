@@ -14,3 +14,8 @@ a:focus {
   font-weight: 300;
   font-family: "Lato", sans-serif;
 }
+
+body {
+	margin: 0;
+	padding: 0;
+}
