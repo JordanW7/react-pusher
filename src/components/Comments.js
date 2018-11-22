@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Row, Col, Input, Button, Form, message } from "antd";
+import { Row, Col, Input, Button } from "antd";
 import CommentEntry from './CommentEntry';
 import './Comments.css';
 
