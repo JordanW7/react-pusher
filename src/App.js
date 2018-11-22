@@ -1,25 +1,37 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Row, Col } from "antd";
+import Header from './components/Header.js';
+import Video from './components/Video.js';
+import Comments from './components/Comments.js';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div className="app">
+      <Header />
+      <main className="app-container">
+        <Row>
+          <Col
+              xs={24}
+              sm={24}
+              md={24}
+              lg={16}
+              xl={16}
+            >
+              <Video />
+          </Col>
+          <Col
+              xs={24}
+              sm={24}
+              md={24}
+              lg={8}
+              xl={8}
+            >
+            <Comments />
+          </Col>
+        </Row>
+      </main>
       </div>
     );
   }
