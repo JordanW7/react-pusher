@@ -1,0 +1,11 @@
+.commententry-user {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: left;
+  align-content: center;
+}
+
+.commententry-avatar {
+	margin: 5px;
+}

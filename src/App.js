@@ -10,8 +10,9 @@ class App extends Component {
     return (
       <div className="app">
       <Header />
-      <main className="app-container">
-        <Row>
+      <main className="app-main">
+      <div className="app-container">
+      <Row>
           <Col
               xs={24}
               sm={24}
@@ -28,9 +29,10 @@ class App extends Component {
               lg={8}
               xl={8}
             >
-            <Comments />
+              <Comments />
           </Col>
         </Row>
+      </div>
       </main>
       </div>
     );

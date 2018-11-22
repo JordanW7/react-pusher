@@ -1,0 +1,28 @@
+.comments {
+	height: 403px;
+	min-width: 200px;
+	background: rgba(0, 0, 0, 0.2);
+	color: white;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.comments-current {
+	overflow: scroll;
+	max-height: 355px;
+}
+
+.comments-button {
+	margin-left: 5px;
+}
+
+.comments-input {
+	width: 100%;
+    max-width: 1000px;
+    box-sizing: border-box;
+	margin-left: 5px;
+}
+
+.comments-form {
+	align-items: center;
+	justify-content: center;
+}

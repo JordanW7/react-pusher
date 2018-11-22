@@ -4,9 +4,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   background-color: #FB3F6C;
+}
+
+.app-main {
+  max-width: 1075px;
+  margin: 0 auto;
+  width: 95%;
+}
+
+.app-container {
+  margin-top: 100px;
+  justify-content: center;
+  align-items: center;
 }
