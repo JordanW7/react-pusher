@@ -3,8 +3,6 @@ import { Row, Col, Input, Button } from "antd";
 import CommentEntry from './CommentEntry';
 import './Comments.css';
 
-const FormItem = Form.Item;
-
 class Comments extends Component {
   render() {
     return (
