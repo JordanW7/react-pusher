@@ -1,23 +1,27 @@
 import React, { Component } from "react";
 import { Row, Col, Input, Button } from "antd";
 import CommentEntry from "./CommentEntry";
-import { subscribeToTimer } from "../api/api";
+import { subscribeToComments } from "../api/api";
 import "./Comments.css";
 
 class Comments extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      timestamp: "no timestamp yet"
+      comments: "",
+      message: ""
     };
-    subscribeToTimer((err, timestamp) =>
-      this.setState({
-        timestamp
-      })
-    );
+    subscribeToComments((err, res) => console.log("RES", res));
   }
+  onMessageChange = event => {
+    this.setState({ message: event.target.value });
+  };
+  onMessageSubmit = () => {
+    if (!this.state.message) {
+      return;
+    }
+  };
   render() {
-    console.log("STAMP", this.state.timestamp);
     return (
       <section className="comments">
         <div className="comments-current">
@@ -29,12 +33,12 @@ class Comments extends Component {
         </div>
         <Row>
           <Col xs={21} sm={21} md={21} lg={18} xl={18}>
-            <Input className="comments-input" />
+            <Input className="comments-input" onChange={this.onMessageChange} />
           </Col>
           <Col xs={3} sm={3} md={3} lg={6} xl={6}>
             <Button
               type="primary"
-              onClick={this.handleSubmit}
+              onClick={this.onMessageSubmit}
               className="comments-button"
             >
               Add

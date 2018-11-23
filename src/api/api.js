@@ -1,9 +1,9 @@
 import openSocket from "socket.io-client";
 const socket = openSocket("http://localhost:3000");
 
-const subscribeToTimer = cb => {
-  socket.on("timer", timestamp => cb(null, timestamp));
-  socket.emit("subscribeToTimer", 1000);
+const subscribeToComments = cb => {
+  socket.on("comments", data => cb(null, data));
+  socket.emit("subscribeToComments");
 };
 
-export { subscribeToTimer };
+export { subscribeToComments };
