@@ -7,7 +7,7 @@ it("expect to render Comments component", () => {
   expect(wrapper).toMatchSnapshot();
 });
 
-it("Correctly submits new comment", () => {
+it("Correctly does not submit new comment if usercomment blank", () => {
   const wrapper = shallow(<Comments />);
   wrapper.find('[id="addcommentsubmit"]').simulate("click");
   expect(wrapper.state()).toEqual({
@@ -16,7 +16,7 @@ it("Correctly submits new comment", () => {
   });
 });
 
-it("Correctly updates comment state", () => {
+it("Correctly updates usercomment state", () => {
   const wrapper = shallow(<Comments />);
   wrapper
     .find('[id="addcommentfield"]')
