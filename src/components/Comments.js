@@ -24,6 +24,11 @@ class Comments extends Component {
   onMessageChange = event => {
     this.setState({ usercomment: event.target.value });
   };
+  onKeyPress = e => {
+    if (e.which === 13) {
+      this.onMessageSubmit();
+    }
+  };
   onMessageSubmit = () => {
     const { usercomment } = this.state;
     if (!usercomment) {
@@ -58,9 +63,15 @@ class Comments extends Component {
         <div className="comments-addbox">
           <Row>
             <Col xs={21} sm={21} md={21} lg={18} xl={18}>
+              <label for="addcomment" style={{ display: "none" }}>
+                Add a comment
+              </label>
               <Input
                 className="comments-input"
                 onChange={this.onMessageChange}
+                onKeyPress={this.onKeyPress}
+                placeholder="Add a comment"
+                id="addcomment"
               />
             </Col>
             <Col xs={3} sm={3} md={3} lg={6} xl={6}>
