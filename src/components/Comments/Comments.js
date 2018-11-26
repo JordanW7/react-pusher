@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Row, Col, Input, Button, message } from "antd";
-import CommentEntry from "./CommentEntry";
-import { subscribeToComments, submitComment } from "../api/api";
+import CommentEntry from "./CommentEntry/CommentEntry";
+import { subscribeToComments, submitComment } from "../../api/api";
 import "./Comments.css";
 
 class Comments extends Component {
@@ -63,7 +63,7 @@ class Comments extends Component {
         <div className="comments-addbox">
           <Row>
             <Col xs={21} sm={21} md={21} lg={18} xl={18}>
-              <label for="addcomment" style={{ display: "none" }}>
+              <label htmlFor="addcommentfield" style={{ display: "none" }}>
                 Add a comment
               </label>
               <Input
@@ -71,11 +71,12 @@ class Comments extends Component {
                 onChange={this.onMessageChange}
                 onKeyPress={this.onKeyPress}
                 placeholder="Add a comment"
-                id="addcomment"
+                id="addcommentfield"
               />
             </Col>
             <Col xs={3} sm={3} md={3} lg={6} xl={6}>
               <Button
+                id="addcommentsubmit"
                 type="primary"
                 onClick={this.onMessageSubmit}
                 className="comments-button"

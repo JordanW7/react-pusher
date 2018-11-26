@@ -1,0 +1,685 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`expect to render Comments component 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Comments />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="comments-current"
+        />,
+        <div
+          className="comments-addbox"
+        >
+          <Row
+            gutter={0}
+          >
+            <Col
+              lg={18}
+              md={21}
+              sm={21}
+              xl={18}
+              xs={21}
+            >
+              <label
+                htmlFor="addcommentfield"
+                style={
+                  Object {
+                    "display": "none",
+                  }
+                }
+              >
+                Add a comment
+              </label>
+              <Input
+                className="comments-input"
+                disabled={false}
+                id="addcommentfield"
+                onChange={[Function]}
+                onKeyPress={[Function]}
+                placeholder="Add a comment"
+                prefixCls="ant-input"
+                type="text"
+              />
+            </Col>
+            <Col
+              lg={6}
+              md={3}
+              sm={3}
+              xl={6}
+              xs={3}
+            >
+              <Button
+                block={false}
+                className="comments-button"
+                ghost={false}
+                id="addcommentsubmit"
+                loading={false}
+                onClick={[Function]}
+                prefixCls="ant-btn"
+                type="primary"
+              >
+                Add
+              </Button>
+            </Col>
+          </Row>
+        </div>,
+      ],
+      "className": "comments",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [],
+          "className": "comments-current",
+        },
+        "ref": null,
+        "rendered": Array [],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <Row
+            gutter={0}
+          >
+            <Col
+              lg={18}
+              md={21}
+              sm={21}
+              xl={18}
+              xs={21}
+            >
+              <label
+                htmlFor="addcommentfield"
+                style={
+                  Object {
+                    "display": "none",
+                  }
+                }
+              >
+                Add a comment
+              </label>
+              <Input
+                className="comments-input"
+                disabled={false}
+                id="addcommentfield"
+                onChange={[Function]}
+                onKeyPress={[Function]}
+                placeholder="Add a comment"
+                prefixCls="ant-input"
+                type="text"
+              />
+            </Col>
+            <Col
+              lg={6}
+              md={3}
+              sm={3}
+              xl={6}
+              xs={3}
+            >
+              <Button
+                block={false}
+                className="comments-button"
+                ghost={false}
+                id="addcommentsubmit"
+                loading={false}
+                onClick={[Function]}
+                prefixCls="ant-btn"
+                type="primary"
+              >
+                Add
+              </Button>
+            </Col>
+          </Row>,
+          "className": "comments-addbox",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <Col
+                lg={18}
+                md={21}
+                sm={21}
+                xl={18}
+                xs={21}
+              >
+                <label
+                  htmlFor="addcommentfield"
+                  style={
+                    Object {
+                      "display": "none",
+                    }
+                  }
+                >
+                  Add a comment
+                </label>
+                <Input
+                  className="comments-input"
+                  disabled={false}
+                  id="addcommentfield"
+                  onChange={[Function]}
+                  onKeyPress={[Function]}
+                  placeholder="Add a comment"
+                  prefixCls="ant-input"
+                  type="text"
+                />
+              </Col>,
+              <Col
+                lg={6}
+                md={3}
+                sm={3}
+                xl={6}
+                xs={3}
+              >
+                <Button
+                  block={false}
+                  className="comments-button"
+                  ghost={false}
+                  id="addcommentsubmit"
+                  loading={false}
+                  onClick={[Function]}
+                  prefixCls="ant-btn"
+                  type="primary"
+                >
+                  Add
+                </Button>
+              </Col>,
+            ],
+            "gutter": 0,
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <label
+                    htmlFor="addcommentfield"
+                    style={
+                      Object {
+                        "display": "none",
+                      }
+                    }
+                  >
+                    Add a comment
+                  </label>,
+                  <Input
+                    className="comments-input"
+                    disabled={false}
+                    id="addcommentfield"
+                    onChange={[Function]}
+                    onKeyPress={[Function]}
+                    placeholder="Add a comment"
+                    prefixCls="ant-input"
+                    type="text"
+                  />,
+                ],
+                "lg": 18,
+                "md": 21,
+                "sm": 21,
+                "xl": 18,
+                "xs": 21,
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Add a comment",
+                    "htmlFor": "addcommentfield",
+                    "style": Object {
+                      "display": "none",
+                    },
+                  },
+                  "ref": null,
+                  "rendered": "Add a comment",
+                  "type": "label",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "className": "comments-input",
+                    "disabled": false,
+                    "id": "addcommentfield",
+                    "onChange": [Function],
+                    "onKeyPress": [Function],
+                    "placeholder": "Add a comment",
+                    "prefixCls": "ant-input",
+                    "type": "text",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <Button
+                  block={false}
+                  className="comments-button"
+                  ghost={false}
+                  id="addcommentsubmit"
+                  loading={false}
+                  onClick={[Function]}
+                  prefixCls="ant-btn"
+                  type="primary"
+                >
+                  Add
+                </Button>,
+                "lg": 6,
+                "md": 3,
+                "sm": 3,
+                "xl": 6,
+                "xs": 3,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "block": false,
+                  "children": "Add",
+                  "className": "comments-button",
+                  "ghost": false,
+                  "id": "addcommentsubmit",
+                  "loading": false,
+                  "onClick": [Function],
+                  "prefixCls": "ant-btn",
+                  "type": "primary",
+                },
+                "ref": null,
+                "rendered": "Add",
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        "type": "div",
+      },
+    ],
+    "type": "section",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="comments-current"
+          />,
+          <div
+            className="comments-addbox"
+          >
+            <Row
+              gutter={0}
+            >
+              <Col
+                lg={18}
+                md={21}
+                sm={21}
+                xl={18}
+                xs={21}
+              >
+                <label
+                  htmlFor="addcommentfield"
+                  style={
+                    Object {
+                      "display": "none",
+                    }
+                  }
+                >
+                  Add a comment
+                </label>
+                <Input
+                  className="comments-input"
+                  disabled={false}
+                  id="addcommentfield"
+                  onChange={[Function]}
+                  onKeyPress={[Function]}
+                  placeholder="Add a comment"
+                  prefixCls="ant-input"
+                  type="text"
+                />
+              </Col>
+              <Col
+                lg={6}
+                md={3}
+                sm={3}
+                xl={6}
+                xs={3}
+              >
+                <Button
+                  block={false}
+                  className="comments-button"
+                  ghost={false}
+                  id="addcommentsubmit"
+                  loading={false}
+                  onClick={[Function]}
+                  prefixCls="ant-btn"
+                  type="primary"
+                >
+                  Add
+                </Button>
+              </Col>
+            </Row>
+          </div>,
+        ],
+        "className": "comments",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [],
+            "className": "comments-current",
+          },
+          "ref": null,
+          "rendered": Array [],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <Row
+              gutter={0}
+            >
+              <Col
+                lg={18}
+                md={21}
+                sm={21}
+                xl={18}
+                xs={21}
+              >
+                <label
+                  htmlFor="addcommentfield"
+                  style={
+                    Object {
+                      "display": "none",
+                    }
+                  }
+                >
+                  Add a comment
+                </label>
+                <Input
+                  className="comments-input"
+                  disabled={false}
+                  id="addcommentfield"
+                  onChange={[Function]}
+                  onKeyPress={[Function]}
+                  placeholder="Add a comment"
+                  prefixCls="ant-input"
+                  type="text"
+                />
+              </Col>
+              <Col
+                lg={6}
+                md={3}
+                sm={3}
+                xl={6}
+                xs={3}
+              >
+                <Button
+                  block={false}
+                  className="comments-button"
+                  ghost={false}
+                  id="addcommentsubmit"
+                  loading={false}
+                  onClick={[Function]}
+                  prefixCls="ant-btn"
+                  type="primary"
+                >
+                  Add
+                </Button>
+              </Col>
+            </Row>,
+            "className": "comments-addbox",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <Col
+                  lg={18}
+                  md={21}
+                  sm={21}
+                  xl={18}
+                  xs={21}
+                >
+                  <label
+                    htmlFor="addcommentfield"
+                    style={
+                      Object {
+                        "display": "none",
+                      }
+                    }
+                  >
+                    Add a comment
+                  </label>
+                  <Input
+                    className="comments-input"
+                    disabled={false}
+                    id="addcommentfield"
+                    onChange={[Function]}
+                    onKeyPress={[Function]}
+                    placeholder="Add a comment"
+                    prefixCls="ant-input"
+                    type="text"
+                  />
+                </Col>,
+                <Col
+                  lg={6}
+                  md={3}
+                  sm={3}
+                  xl={6}
+                  xs={3}
+                >
+                  <Button
+                    block={false}
+                    className="comments-button"
+                    ghost={false}
+                    id="addcommentsubmit"
+                    loading={false}
+                    onClick={[Function]}
+                    prefixCls="ant-btn"
+                    type="primary"
+                  >
+                    Add
+                  </Button>
+                </Col>,
+              ],
+              "gutter": 0,
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": Array [
+                    <label
+                      htmlFor="addcommentfield"
+                      style={
+                        Object {
+                          "display": "none",
+                        }
+                      }
+                    >
+                      Add a comment
+                    </label>,
+                    <Input
+                      className="comments-input"
+                      disabled={false}
+                      id="addcommentfield"
+                      onChange={[Function]}
+                      onKeyPress={[Function]}
+                      placeholder="Add a comment"
+                      prefixCls="ant-input"
+                      type="text"
+                    />,
+                  ],
+                  "lg": 18,
+                  "md": 21,
+                  "sm": 21,
+                  "xl": 18,
+                  "xs": 21,
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Add a comment",
+                      "htmlFor": "addcommentfield",
+                      "style": Object {
+                        "display": "none",
+                      },
+                    },
+                    "ref": null,
+                    "rendered": "Add a comment",
+                    "type": "label",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "className": "comments-input",
+                      "disabled": false,
+                      "id": "addcommentfield",
+                      "onChange": [Function],
+                      "onKeyPress": [Function],
+                      "placeholder": "Add a comment",
+                      "prefixCls": "ant-input",
+                      "type": "text",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                ],
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <Button
+                    block={false}
+                    className="comments-button"
+                    ghost={false}
+                    id="addcommentsubmit"
+                    loading={false}
+                    onClick={[Function]}
+                    prefixCls="ant-btn"
+                    type="primary"
+                  >
+                    Add
+                  </Button>,
+                  "lg": 6,
+                  "md": 3,
+                  "sm": 3,
+                  "xl": 6,
+                  "xs": 3,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "block": false,
+                    "children": "Add",
+                    "className": "comments-button",
+                    "ghost": false,
+                    "id": "addcommentsubmit",
+                    "loading": false,
+                    "onClick": [Function],
+                    "prefixCls": "ant-btn",
+                    "type": "primary",
+                  },
+                  "ref": null,
+                  "rendered": "Add",
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+          "type": "div",
+        },
+      ],
+      "type": "section",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

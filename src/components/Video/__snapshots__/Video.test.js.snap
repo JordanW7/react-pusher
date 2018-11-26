@@ -1,0 +1,103 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`expect to render Video component 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Video />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <iframe
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen={true}
+        className="video-iframe"
+        frameBorder="0"
+        src="https://www.youtube.com/embed/XOacA3RYrXk"
+        title="video"
+      />,
+      "className": "video",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "allow": "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
+        "allowFullScreen": true,
+        "className": "video-iframe",
+        "frameBorder": "0",
+        "src": "https://www.youtube.com/embed/XOacA3RYrXk",
+        "title": "video",
+      },
+      "ref": null,
+      "rendered": null,
+      "type": "iframe",
+    },
+    "type": "section",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <iframe
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen={true}
+          className="video-iframe"
+          frameBorder="0"
+          src="https://www.youtube.com/embed/XOacA3RYrXk"
+          title="video"
+        />,
+        "className": "video",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "allow": "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
+          "allowFullScreen": true,
+          "className": "video-iframe",
+          "frameBorder": "0",
+          "src": "https://www.youtube.com/embed/XOacA3RYrXk",
+          "title": "video",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "iframe",
+      },
+      "type": "section",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

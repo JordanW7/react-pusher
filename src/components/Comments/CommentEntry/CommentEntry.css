@@ -7,9 +7,9 @@
 }
 
 .commententry-avatar {
-	margin: 5px;
+  margin: 5px;
 }
 
 .commententry {
-	border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
 }
