@@ -6,4 +6,11 @@ const subscribeToComments = cb => {
   socket.emit("subscribeToComments");
 };
 
-export { subscribeToComments };
+const submitComment = data => {
+  console.log("ADDING", data);
+  socket.on("comments", () => {
+    socket.emit(`RECEIVED ${data}`);
+  });
+};
+
+export { subscribeToComments, submitComment };

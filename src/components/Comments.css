@@ -1,28 +1,28 @@
 .comments {
-	height: 403px;
-	min-width: 200px;
-	background: rgba(0, 0, 0, 0.7);
-	color: white;
-	border: 1px solid rgba(0, 0, 0, 0.9);
+  height: 403px;
+  min-width: 200px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: 1px solid rgba(0, 0, 0, 0.9);
 }
 
 .comments-current {
-	overflow: scroll;
-	max-height: 355px;
+  overflow: scroll;
+  height: 355px;
 }
 
 .comments-button {
-	margin-left: 5px;
+  margin-left: 5px;
 }
 
 .comments-input {
-	width: 100%;
-    max-width: 1000px;
-    box-sizing: border-box;
-	margin-left: 5px;
+  width: 100%;
+  max-width: 1000px;
+  box-sizing: border-box;
+  margin-left: 5px;
 }
 
 .comments-form {
-	align-items: center;
-	justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
