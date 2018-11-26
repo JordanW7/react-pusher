@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Row, Col, Input, Button } from "antd";
+import { Row, Col, Input, Button, message } from "antd";
 import CommentEntry from "./CommentEntry";
 import { subscribeToComments, submitComment } from "../api/api";
 import "./Comments.css";
@@ -9,29 +9,39 @@ class Comments extends Component {
     super(props);
     this.state = {
       comments: [],
-      message: ""
+      usercomment: ""
     };
-    subscribeToComments((err, newcomment) => {
-      this.setState(prevState => ({
-        comments: [...prevState.comments, newcomment]
-      }));
-    });
+    try {
+      subscribeToComments((err, newcomment) => {
+        this.setState(prevState => ({
+          comments: [newcomment, ...prevState.comments]
+        }));
+      });
+    } catch (err) {
+      message.error("Error subscribing to comments");
+    }
   }
   onMessageChange = event => {
-    this.setState({ message: event.target.value });
+    this.setState({ usercomment: event.target.value });
   };
   onMessageSubmit = () => {
-    if (!this.state.message) {
-      return;
+    const { usercomment } = this.state;
+    if (!usercomment) {
+      return message.error("Please provide a message to submit");
     }
-    submitComment(this.state.message);
+    try {
+      submitComment(usercomment);
+      const newcomment = ["You", "", "", usercomment, new Date()];
+      this.setState(prevState => ({
+        comments: [newcomment, ...prevState.comments]
+      }));
+    } catch (err) {
+      message.error("Error submitting comment");
+    }
   };
   render() {
     return (
       <section className="comments">
-        {
-          //Could do with adding automatic scrolling to bottom here when a new comment is added//
-        }
         <div className="comments-current">
           {this.state.comments.map((result, i) => {
             return (
